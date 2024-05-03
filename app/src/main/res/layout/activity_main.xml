@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Iniciar sesion"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint="Digita tu usuario" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constraseña"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtContrasena"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:hint="Digita tu contraseña" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#FF0000"
+            android:text="Inciar sesion"
+            android:textSize="20sp"
+            android:onClick="iniciarSesion"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
